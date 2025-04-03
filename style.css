@@ -1,0 +1,163 @@
+/* Importation de la police futuriste */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* Style général */
+body {  
+    background-size: 1000% 1000%;
+    animation: gradientBG 6s ease-in-out infinite alternate;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@keyframes gradientBG {
+    0%, 100% { 
+        background: linear-gradient(45deg, black, darkred, black); 
+    }
+    25% { 
+        background: linear-gradient(45deg, black, darkred, red); 
+    }
+    50% { 
+        background: linear-gradient(45deg, black, red, darkred); 
+    }
+    75% { 
+        background: linear-gradient(45deg, darkred, red, black); 
+    }
+}
+
+
+
+/* En-tête */
+.profile-header {
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px rgba(255, 0, 68, 0.5);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 650px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.profile-header:hover {
+    transform: scale(1.05);
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 0, 0);
+    box-shadow: 0 0 15px rgb(255, 4, 0);
+    transition: transform 0.3s ease;
+}
+
+.profile-picture {
+    animation: rotateBackAndForth 4s ease-in-out infinite;
+}
+
+@keyframes rotateBackAndForth {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+h1, h2 {
+    text-shadow: 0 0 20px rgba(255, 65, 1, 0.7);
+}
+ /* RG Design */ 
+h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+/* Designer UX/UI et Photographe */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Liens sociaux */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+ /* Bouton lien */
+.social-links .btn {
+    background-color: rgb(246, 0, 0);
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 0 15px rgba(243, 24, 4, 0.7);
+    transition: all 0.3s ease;
+}
+ /* Agrandissement Lien */
+.social-links .btn:hover {
+    background-color: #ce9297;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(230, 7, 7, 0.9);
+}
+
+/* Section des icônes */
+.icons-section {
+    margin-top: 40px;
+    text-align: center;
+}
+ /* espace icone et Footer */
+.icons-section h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 15px rgba(196, 0, 0, 0.7);
+}
+ /*Espace icone*/
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+  /*Taille et tranformation icone*/
+.icons img {
+    width: 50px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+ /*Aggrandissement icone*/ 
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(251, 9, 0, 0.5);
+}
+/* Adresse mail */
+footer a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+/* Mail souligné */
+footer a:hover {
+    text-decoration: underline;
+}
